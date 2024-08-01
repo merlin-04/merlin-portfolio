@@ -14,7 +14,7 @@ function validate() {
     const subject = document.getElementById('subject');
     const message = document.getElementById('message');
 
-    if (name.value == "" || email.value == "" || subject.value == "" || message.value == "") {
+    if (name.value.trim() == "" || email.value.trim() == "" || subject.value.trim() == "" || message.value.trim() == "") {
         alert('No blank values allowed');
         return false;
     }
