@@ -18,6 +18,18 @@ function validate() {
         alert('No blank values allowed');
         return false;
     }
+    else if (name.value.length < 2) {
+        alert('Invalid input in Name field');
+        return false;
+    }
+    else if (subject.value.length < 4) {
+        alert('Invalid input in Subject field');
+        return false;
+    }
+    else if (message.value.length < 8) {
+        alert('Invalid input in Message field');
+        return false;
+    }
     else {
         sendMail();
         return true;
